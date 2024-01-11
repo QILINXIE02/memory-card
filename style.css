@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffe4e1; /* Pale Pink Background for Body */
+}
+
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  background-color: #fff; /* White Background for the Memory Game Container */
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card.flipped {
+  background-color: #fff;
+  color: #3498db;
+}
+
+.card.matched {
+  background-color: #2ecc71;
+  cursor: default;
+}
